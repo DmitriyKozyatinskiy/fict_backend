@@ -1,17 +1,7 @@
 const express = require('express');
-const httpStatus = require('http-status');
 const XlsxPopulate = require('xlsx-populate');
 
 const router = express.Router({ mergeParams: true });
-
-router.get('/', async (req, res, next) => {
-  try {
-    const exercises = await Exercise.find().lean();
-    res.status(200).send(exercises);
-  } catch(err) {
-    return next(err);
-  }
-});
 
 router.post('/', async (req, res, next) => {
   try {
