@@ -8,7 +8,7 @@
   },
   "main": "app.js",
   "engines": {
-    "node": "9.11.1"
+    "node": "10.12.0"
   },
   "scripts": {
     "start": "node ./bin/www",
